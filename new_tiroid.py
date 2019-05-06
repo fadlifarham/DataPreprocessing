@@ -41,7 +41,7 @@ def sigmoid(data, label):
             error += 1
     print(train_data)
     print(test_data)
-    sum_error = error / n
+    sum_error = error / n * 100
     print("Error Sigmoidal : ", str(sum_error), " %")
 
 def z_score(data, label):
@@ -61,7 +61,7 @@ def z_score(data, label):
             error += 1
     print(train_data)
     print(test_data)
-    sum_error = error / n
+    sum_error = error / n * 100
     print("Error Z Score : ", str(sum_error), " %")
     
 
@@ -87,7 +87,7 @@ def minmax(data, label):
             error += 1
     print(train_data)
     print(test_data)
-    sum_error = error / n
+    sum_error = error / n * 100
     print("Error MinMax : " + str(sum_error) + " %")
 
 def imputasi(data):
